@@ -1633,6 +1633,10 @@ footer .credit a {
 
     /* Hero Section Styles for iPhone */
     @media only screen and (max-width: 414px) {
+        .text-overlay .label {
+            margin-top: 20px; /* Add margin-top to lower the label */
+        }
+        
         .text-overlay h1 {
             font-size: 28px;
             margin-top: 20px;

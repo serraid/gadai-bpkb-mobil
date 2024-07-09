@@ -201,8 +201,10 @@ body {
     color: #007bff;
 }
 
-.whatsapp-icon {
+.whatsapp-icon-inline {
+    vertical-align: middle;
     margin-right: 8px;
+    font-size: 1.2em;
 }
 
 /*Konten halaman section */
@@ -911,23 +913,33 @@ footer .credit a {
     background-color: #20b358;
 }
 
-.whatsapp-float {
+/* Styles for the floating WhatsApp button */
+.floating-whatsapp {
     position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
     width: 60px;
     height: 60px;
-    bottom: 40px;
-    right: 40px;
-    background-color: #25d366;
-    color: #fff;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 2px 2px 3px #999;
-    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
 }
 
-.whatsapp-icon {
-    margin-top: 15px;
+.floating-whatsapp:hover {
+    background-color: #1ebc59;
+}
+
+.floating-whatsapp i {
+    font-size: 24px;
+    text-decoration: none;
+    /* Ensure no underline on the icon */
 }
 
 /* Media Queries */
@@ -1399,6 +1411,15 @@ footer .credit a {
 
     .footer-right .hotline p {
         color: #fff;
+    }
+
+    .floating-whatsapp {
+        width: 50px;
+        height: 50px;
+    }
+
+    .floating-whatsapp i {
+        font-size: 20px;
     }
 
     @media (max-width: 576px) {

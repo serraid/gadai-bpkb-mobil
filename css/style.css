@@ -201,14 +201,18 @@ body {
     color: #007bff;
 }
 
+.whatsapp-icon {
+    margin-right: 8px;
+}
+
 /*Konten halaman section */
 #scrollBtn {
     display: none;
     /* Hidden by default */
     position: fixed;
     /* Stay in place */
-    bottom: 20px;
-    /* 20px from the bottom */
+    bottom: 130px;
+    /* Adjusted to avoid overlap with WhatsApp button */
     right: 30px;
     /* 30px from the right */
     z-index: 99;
@@ -907,6 +911,25 @@ footer .credit a {
     background-color: #20b358;
 }
 
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.whatsapp-icon {
+    margin-top: 15px;
+}
+
 /* Media Queries */
 @media (max-width: 1199px) {
     .contact-form {
@@ -1185,13 +1208,46 @@ footer .credit a {
         max-width: 50%;
     }
 
+    .contact-form h2 {
+        font-weight: 600;
+        /* Menambah ketebalan h2 */
+        margin-top: 10px;
+        /* Sesuaikan margin atas sesuai kebutuhan */
+    }
+
+    .contact-form label {
+        font-weight: 400;
+        /* Mempertebal label namun tidak terlalu tebal */
+        display: inline-block;
+        width: 150px;
+        white-space: nowrap;
+    }
+
+    .contact-form td {
+        padding: 2px;
+        /* Sesuaikan jarak antara label dan input */
+    }
+
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form select {
+        width: calc(100% - 160px);
+        /* Sesuaikan lebar input sesuai kebutuhan */
+    }
+
+    .contact-form td label,
+    .contact-form td input,
+    .contact-form td textarea,
+    .contact-form td select {
+        vertical-align: middle;
+    }
+
     .about .row,
     .menu .row {
         flex-direction: column;
     }
 
-    .about-img,
-    .about .content {
+    .about-img {
         flex: 1 1 100%;
     }
 
@@ -1200,12 +1256,23 @@ footer .credit a {
         max-width: 45%;
     }
 
-    .bold-text {
+    .about-content h2 {
+        font-weight: 200;
+        /* Kurangi ketebalan teks */
         font-size: 20px;
+        /* Sesuaikan ukuran font */
+        margin: 0 20px;
+        /* Jarak kiri dan kanan */
     }
 
-    .medium-text {
+    .about-content p {
+        font-weight: 400;
         font-size: 16px;
+        margin: 0 20px;
+    }
+
+    .about-content {
+        padding: 20px;
     }
 
     .about-1 h3 {

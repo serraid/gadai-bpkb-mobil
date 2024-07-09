@@ -1637,7 +1637,7 @@ footer .credit a {
 
     .hero-image {
         position: absolute;
-        top: -100px; /* Naikkan gambar lebih ke atas */
+        top: -140px; /* Naikkan gambar lebih ke atas */
         left: 0;
         right: 0;
         width: 100%;
@@ -1645,17 +1645,11 @@ footer .credit a {
     }
 
     .text-overlay {
-        max-width: 90%; /* Mengurangi lebar maksimum agar sesuai dengan lebar layar */
-        margin-left: auto; /* Mengatur margin kiri menjadi otomatis */
-        margin-right: auto; /* Mengatur margin kanan menjadi otomatis */
-        text-align: center; /* Mengatur teks agar berada di tengah */
-        margin-top: 20px; /* Menambahkan margin atas untuk menjauhkan dari gambar */
-    }
-
-    .text-overlay .label {
-        margin-top: 10px; /* Menambahkan margin atas pada label untuk menjauhkan dari gambar */
-        padding: 4px 10px; /* Mengatur padding pada label */
-        font-size: 12px; /* Mengurangi ukuran font untuk penyesuaian */
+        text-align: center;
+        max-width: 90%;
+        margin: 0 auto;
+        order: 2;
+        margin-top: -20px;
     }
 
     .text-overlay h1 {

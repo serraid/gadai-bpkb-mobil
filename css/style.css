@@ -1329,6 +1329,10 @@ footer .credit a {
         order: 3;
     }
 
+    .footer-right .hotline p {
+        color: #fff;
+    }
+
     @media (max-width: 576px) {
         .menu-card {
             width: 90%;
@@ -1450,6 +1454,10 @@ footer .credit a {
 
         .footer-right {
             order: 3;
+        }
+
+        .footer-right .hotline p {
+            color: #fff;
         }
     }
 
@@ -1616,6 +1624,10 @@ footer .credit a {
 
         .footer-right {
             order: 3;
+        }
+
+        .footer-right .hotline p {
+            color: #fff;
         }
     }
 

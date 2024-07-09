@@ -47,7 +47,11 @@ setInterval(changeText, 3000);
 
 function toggleInfo(id) {
     var element = document.getElementById(id);
-    element.classList.toggle('active');
+    if (element.style.display === "block") {
+        element.style.display = "none";
+    } else {
+        element.style.display = "block";
+    }
 }
 
 // Get the button

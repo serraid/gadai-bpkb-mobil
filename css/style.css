@@ -614,10 +614,6 @@ body {
     font-weight: normal;
 }
 
-.info-details.show {
-    display: block;
-}
-
 .menu-card {
     background-color: #fff;
     border: 1px solid #ddd;

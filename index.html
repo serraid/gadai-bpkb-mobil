@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gadai BPKB Mobil</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar start -->
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="#" class="navbar-logo">
+                <img src="img/serraid.com -min.png" alt="Logo" class="logo-img">
+            </a>
+        </div>
+        <div class="navbar-right">
+            <div class="navbar-nav" id="navbar-nav">
+                <a href="#home">Home</a>
+                <a href="#about">Tentang Kami</a>
+                <a href="#menu">Promo</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="navbar-extra">
+                <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Hero Section start -->
+    <section class="hero" id="home">
+        <div class="text-overlay">
+            <span class="label">Pinjaman Jaminan BPKB Mobil & Motor</span>
+            <h1>Butuh dana tunai Untuk <span id="changing-text">Modal Usaha?</span></h1>
+            <p>Serraid.com siap membantu Anda</p>
+            <ul>
+                <li><i class="fa fa-check"></i> Pengajuan cepat disetujui</li>
+                <li><i class="fa fa-check"></i> Tenor panjang sampai 48 bulan</li>
+            </ul>
+            <div class="hero-cta">
+                <a href="https://wa.me/+6282271151501" class="cta cta-primary">0822 7115 1501</a>
+                <a href="#contact-form" class="cta cta-secondary">Hitung Simulasi</a>
+            </div>
+        </div>
+        <div class="hero-image-container">
+            <img src="img/Hero-min.png" alt="Hero Image" class="hero-image">
+        </div>
+    </section>
+    <!-- Hero Section end -->
+
+    <!-- Tombol Scroll to Top -->
+    <button onclick="topFunction()" id="scrollBtn" title="Go to top">&#8679;</button>
+
+    <!-- Contact Section start -->
+    <section id="contact" class="contact">
+        <h2>Solusi Pinjaman Dana Tunai Mudah, Cepat, dan Aman</h2>
+        <p>Butuh pembiayaan cepat? pengajuan Mudah Pinjaman gadai bpkb mobil, bisa tanpa survey cukup dirumah saja.
+            cair hingga 90% dari harga kendaraan. Bunga pinjaman pertahun 8,4%. Bisa Take Over Mobil masih dalam
+            kredit. Segera hubungi kami sekarang juga untuk dapatkan simulasi terbaik. GRATIS!!!</p>
+
+        <div class="contact-row">
+            <div class="contact-img">
+                <h2 class="title">Gadai BPKB Mobil Pengajuan Mudah Via Online</h2>
+                <img src="img/Form.png" alt="Contact Us">
+            </div>
+            <div class="contact-form" id="contact-form">
+                <h2>Isi Form Untuk Simulasi Terbaik</h2>
+
+                <form id="loanForm">
+                    <table>
+                        <tr>
+                            <td><label for="nama">Nama</label></td>
+                            <td><input type="text" id="nama" name="nama" placeholder="Masukkan Nama Lengkap" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="nomor">Nomor Handphone / WA:</label></td>
+                            <td><input type="tel" id="nomor" name="nomor" placeholder="Masukkan Nomor Handphone / WA"
+                                    pattern="[0-9]*" inputmode="numeric" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="alamat">Alamat</label></td>
+                            <td><textarea id="alamat" name="alamat" placeholder="Kelurahan, Kecamatan, Kota"
+                                    required></textarea></td>
+                        </tr>
+                        <tr>
+                            <td><label for="jenis_kendaraan">Jenis Kendaraan</label></td>
+                            <td>
+                                <select id="jenis_kendaraan" name="jenis_kendaraan" required>
+                                    <option value="Mobil">Mobil</option>
+                                    <option value="Motor">Motor</option>
+                                    <option value="Pickup/Truck">Pickup/Truck</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="merk_type_kendaraan">Merk & Type Kendaraan</label></td>
+                            <td><input type="text" id="merk_type_kendaraan" name="merk_type_kendaraan"
+                                    placeholder="Pajero Sport Exceed 4x2 MT" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="plat_nomor">Plat Nomor</label></td>
+                            <td><input type="text" id="plat_nomor" name="plat_nomor" placeholder="B 4444 GUS" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="tahun_kendaraan">Tahun Kendaraan</label></td>
+                            <td>
+                                <select id="tahun_kendaraan" name="tahun_kendaraan" required>
+                                    <option value="2024">2024</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2016">2016</option>
+                                    <option value="2015">2015</option>
+                                    <option value="2014">2014</option>
+                                    <option value="2013">2013</option>
+                                    <option value="2012">2012</option>
+                                    <option value="2011">2011</option>
+                                    <option value="2010">2010</option>
+                                    <option value="2009">2009</option>
+                                    <option value="2008">2008</option>
+                                    <option value="2007">2007</option>
+                                    <option value="2006">2006</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: center;">
+                                <button type="button" onclick="submitForm()" class="submit-btn">Kirim</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="privacy-text">*kerahasiaan data adalah prioritas kami.</td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section end -->
+
+    <!-- Container1 start-->
+    <div class="container1">
+        <div class="left-section1">
+            <img src="img/Langkah pengajuan-min.png" alt="Proses Cepat 1 Hari Cair">
+        </div>
+        <div class="right-section1">
+            <h2 class="bold-text blue-text">Proses Cepat 1 Hari cair</h2>
+            <p class="medium-text">Untuk pengajuan pinjaman dengan agunan atau gadai BPKB Mobil / Motor proses hanya
+                membutuhkan 1 hari approve dari data persyaratan lengkap. Proses yang cepat dan mudah, tanpa harus
+                menunggu lama.</p>
+            <h2 class="bold-text orange-text">Simulasi Gratis dan Transparan</h2>
+            <p class="medium-text">Jika anda ingin mengetahui simulasi kredit dengan AGUNAN BPKB secara detail bisa
+                langsung hubungi kami, GRATIS dan TRANSPARAN kami siap melayani. Kami akan memberikan penjelasan yang
+                jelas dan dapat dipahami.</p>
+        </div>
+    </div>
+    <!-- Container1 end-->
+
+    <!-- About Section start -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="about-content">
+                        <h2>Keunggulan Pengajuan Bersama Kami</h2>
+                        <p>Dengan pengalaman kami dari tahun 1982. kami selalu menjadi perusahaan pembiayaan terdepan
+                            dengan mengutamakan kepuasan customer kami atau kreditur.</p>
+                        <div class="about-imgs">
+                            <div class="about-img">
+                                <img src="img/Timbul 1-min.png" alt=" Peta Indonesia 1" class="img-fluid">
+                            </div>
+                            <div class="about-img">
+                                <img src="img/Timbul 2-min.png" alt="Peta Indonesia 2" class="img-fluid">
+                            </div>
+                            <div class="about-img">
+                                <img src="img/Timbul 3-min.png" alt="Peta Indonesia 3" class="img-fluid">
+                            </div>
+                            <div class="about-img">
+                                <img src="img/Timbul 4-min.png" alt="Peta Indonesia 4" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section end -->
+
+    <!-- About Section-1 start -->
+    <section class="about-1">
+        <div class="container">
+            <div class="row">
+                <div class="about-1-img">
+                    <img src="img/Peta Indo-min.png" alt="Cover Seluruh Indonesia">
+                </div>
+                <div class="about-1-content">
+                    <h3>Cover Seluruh Indonesia</h3>
+                    <p>Lokasi cabang tersebar berbagai kota dan pelosok dari sabang sampai merauke jadi tidak perlu ragu
+                        anda berada dimanapun dan kapanpun anda bisa menikmati fasilitas pinjaman dari kami. Dengan
+                        perusahaan multi finance terbesar di Indonesia jangan ragu untuk hubungi kami segera. </p>
+                </div>
+            </div>
+            <div class="row syarat">
+                <div class="syarat-img">
+                    <img src="img/ceklist-min.png" alt="Syarat Gadai BPKB">
+                </div>
+                <div class="syarat-content">
+                    <h3>Syarat Pengajuan Gadai BPKB Mobil</h3>
+                    <ul>
+                        <li>Foto copy KTP suami / istri</li>
+                        <li>Foto copy kartu keluarga</li>
+                        <li>PBB rekening listrik</li>
+                        <li>Rekening tabungan 3 bulan terakhir</li>
+                        <li>Slip gaji (jika karyawan)</li>
+                        <li>Surat keterangan usaha (jika wirausaha)</li>
+                        <li>Foto copy STNK</li>
+                        <li>Foto copy BPKB</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section-1 end -->
+
+    <!-- Menu Section start-->
+    <section id="menu" class="menu">
+        <h2>Contoh Simulasi Pajero Sport Exceed 4x2 MT 2023</h2>
+        <div class="additional-info">
+            <div class="info-img">
+                <img src="img/Mobil pajero-min.png" alt="Simulasi">
+                <div class="info-details">Simulasi Pajero Sport Exceed 4x2 MT 2023</div>
+            </div>
+            <div class="info-text">
+                <div class="info-item" onclick="toggleInfo('tenor-info')">
+                    ⯈ Periode Tenor Minimum & maksimum
+                </div>
+                <div id="tenor-info" class="info-details">
+                    Flexibilitas dalam pemilihan tenor yang tersedia yaitu periode 12 bulan sampai dengan 48 bulan.
+                </div>
+                <div class="info-item" onclick="toggleInfo('interest-info')">
+                    ⯈ Suku Bunga Pertahun
+                </div>
+                <div id="interest-info" class="info-details">
+                    Untuk suku bunga simulasi pinjaman yaitu mulai dari 8% pertahun sampai dengan 10% flat pertahun.
+                </div>
+                <div class="info-item" onclick="toggleInfo('insurance-info')">
+                    ⯈ Asuransi
+                </div>
+                <div id="insurance-info" class="info-details">
+                    Simulasi sudah termasuk asuransi kendaraan TLO, dan bisa flexible untuk pilihan asuransi full
+                    allrisk atau asuransi kombinasi dimana 1 tahun pertama allrisk dan selanjutnya TLO silahkan kontak
+                    kami untuk simulasi yang menyesuaikan kebutuhan anda.
+                </div>
+                <div class="info-item" onclick="toggleInfo('payout-info')">
+                    ⯈ Pencairan Terima Full
+                </div>
+                <div id="payout-info" class="info-details">
+                    Kami akan memberikan simulasi pencairan terima bersih tanpa potongan.
+                </div>
+                <div class="info-item" onclick="toggleInfo('ownership-info')">
+                    ⯈ Bisa Atas Nama Perorangan Atau Perusahaan
+                </div>
+                <div id="ownership-info" class="info-details">
+                    Pengajuan bisa atas perorangan atau badan usaha jika pengajuan untuk pengembangan perusahaan dimana
+                    bisa pengajuan dalam jumlah banyak unit aset.
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="menu-card">
+                <h3 class="menu-card-title">Tenor 1 Tahun</h3>
+                <p>Pajero Sport Exceed</p>
+                <p>Rp 100.000.000</p>
+                <p>Angsuran Rp 9.858.000</p>
+                <p class="menu-card-item">&#9989; Cair tanpa potongan</p>
+                <p class="menu-card-item">&#9989; Termasuk asuransi Kendaraan</p>
+                <p class="menu-card-item">&#9989; Termasuk administrasi</p>
+                <p class="menu-card-item">&#9989; Bunga 8,4% pertahun</p>
+                <a href="https://wa.me/6282271151501" class="cta" target="_blank">Hubungi Kami</a>
+            </div>
+            <div class="menu-card">
+                <h3 class="menu-card-title">Tenor 2 Tahun</h3>
+                <p>Pajero Sport Exceed</p>
+                <p>Rp 100.000.000</p>
+                <p>Angsuran Rp 5.560.000</p>
+                <p class="menu-card-item">&#9989; Cair tanpa potongan</p>
+                <p class="menu-card-item">&#9989; Termasuk asuransi Kendaraan</p>
+                <p class="menu-card-item">&#9989; Termasuk administrasi</p>
+                <p class="menu-card-item">&#9989; Bunga 8,4% pertahun</p>
+                <a href="https://wa.me/+6282271151501" class="cta" target="_blank">Hubungi Kami</a>
+            </div>
+            <div class="menu-card">
+                <h3 class="menu-card-title">Tenor 3 Tahun</h3>
+                <p>Pajero Sport Exceed</p>
+                <p>Rp 100.000.000</p>
+                <p>Angsuran Rp 4.235.500</p>
+                <p class="menu-card-item">&#9989; Cair tanpa potongan</p>
+                <p class="menu-card-item">&#9989; Termasuk asuransi Kendaraan</p>
+                <p class="menu-card-item">&#9989; Termasuk administrasi</p>
+                <p class="menu-card-item">&#9989; Bunga 9,2% pertahun</p>
+                <a href="https://wa.me/+6282271151501" class="cta" target="_blank">Hubungi Kami</a>
+            </div>
+            <div class="menu-card">
+                <h3 class="menu-card-title">Tenor 4 Tahun</h3>
+                <p>Pajero Sport Exceed</p>
+                <p>Rp 100.000.000</p>
+                <p>Angsuran Rp 3.695.500</p>
+                <p class="menu-card-item">&#9989; Cair tanpa potongan</p>
+                <p class="menu-card-item">&#9989; Termasuk asuransi Kendaraan</p>
+                <p class="menu-card-item">&#9989; Termasuk administrasi</p>
+                <p class="menu-card-item">&#9989; Bunga 9,9% pertahun</p>
+                <a href="https://wa.me/+6282271151501" class="cta" target="_blank">Hubungi Kami</a>
+            </div>
+        </div>
+    </section>
+    <!-- Menu Section end -->
+
+    <!-- Kredit Section start -->
+    <section class="kredit-container">
+        <div class="kredit-text">
+            <h2 class="section-title">Keuntungan Pengajuan Kredit<br>Dengan Kami</h2>
+            <ul>
+                <li>Resmi dibawah naungan OJK</li>
+                <li>Bunga rendah 8,4% pertahun</li>
+                <li>Tanpa BI checking</li>
+                <li>Bisa take over (mobil masih kredit)</li>
+                <li>Tersedia 172 cabang</li>
+                <li>Tenor kredit 6 sampai 48 bulan</li>
+            </ul>
+        </div>
+        <div class="kredit-image">
+            <img src="img/Penutup-min.png" alt="Illustration">
+        </div>
+    </section>
+    <!-- Kredit Section end -->
+
+    <!-- Testimonial Section start -->
+    <section class="testimonial-section">
+        <div class="container">
+            <div class="testimonial-content">
+                <div class="testimonial-heading">
+                    <p class="quote-icon">“</p>
+                    <h2>Apa Kata Mereka<br>Yang Sudah<br>Menggunakan Jasa Kami</h2>
+                </div>
+                <div class="testimonials">
+                    <div class="testimonial">
+                        <h3>Handoko</h3>
+                        <p class="location">Tangerang selatan</p>
+                        <div class="rating">★★★★★</div>
+                        <p class="testimonial-text">Proses mudah tidak ribet tidak memerlukan waktu lama, terimaksih
+                            telah membantu saya dalam proses pengajuan pinjaman danatunai dengan BPKB Mobil.</p>
+                    </div>
+                    <div class="testimonial">
+                        <h3>Dessy</h3>
+                        <p class="location">Tasikmalaya</p>
+                        <div class="rating">★★★★★</div>
+                        <p class="testimonial-text">Keadaan Pandemi Covid sejak Awal 2020 Membuat perusahaan Membutuhkan
+                            Tambahan Dana Operasional. Berkat pengajuan Jaminan BPKB Mobil di serraid.com keuangan
+                            Operasional Akhir nya Terselesaikan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonial Section end -->
+
+    <!-- Footer start -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3>Alamat Head Office:</h3>
+                <p>BFI Tower Sunburst CBD BSD City, Jl. Kapten Soebijanto Djojohadikusumo No.2, Tangerang Selatan,
+                    Banten 10340</p>
+            </div>
+            <div class="footer-center">
+                <div class="links">
+                    <a href="#home">Home</a>
+                    <a href="#about">Tentang Kami</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#contact">Kontak</a>
+                </div>
+                <div class="credit">
+                    <p>BPKB Mobil, BPKB MOTOR, BPKB PICKUP/TRUK</p>
+                    <p>Created by <a href="">PT Rams Genta Sinergi</a>. | &copy; 2024.</p>
+                    <p>Support by: PT BFI FINANCE</p>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="hotline">
+                    <h3>Hot Line:</h3>
+                    <p>0822 7115 1501</p>
+                    <a href="https://wa.me/+6282271151501" target="_blank" class="whatsapp-button">WhatsApp Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer end-->
+    <script>
+        feather.replace()
+    </script>
+
+    <!-- My JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

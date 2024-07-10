@@ -21,7 +21,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.4rem 7%;
+    padding: 1.2rem 7%;
     background-color: #0056b3;
     border-bottom: 1px solid #513c28;
     position: fixed;
@@ -1734,6 +1734,16 @@ footer .credit a {
 
     /* Hero Section Styles for iPhone */
     @media only screen and (max-width: 414px) {
+        .navbar {
+            padding: 1.2rem 7% 0.1rem;
+            /* Kurangi padding-bottom untuk menaikkan bagian bawah navbar */
+        }
+
+        .hero-image-container {
+            margin-top: -18px;
+            /* Sesuaikan nilai ini untuk menaikkan gambar */
+        }
+
         .text-overlay .label {
             margin-top: 20px;
             /* Add margin-top to lower the label */

@@ -103,3 +103,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         heroSection.style.marginBottom = '20px'; // Adjust the value as needed
     }
 });
+
+if (window.top !== window.self) {
+    window.top.location = window.location;
+}

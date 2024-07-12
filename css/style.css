@@ -280,12 +280,12 @@ body {
 
 .contact-img h2.title {
     font-size: 20px;
-    margin-bottom: 14px;
+    margin-bottom: 20px;
     color: orange
 }
 
 .contact-img img {
-    max-width: 62%;
+    max-width: 58%;
     height: auto;
 }
 

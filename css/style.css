@@ -285,7 +285,7 @@ body {
 }
 
 .contact-img img {
-    max-width: 58%;
+    max-width: 61%;
     height: auto;
 }
 
@@ -301,7 +301,7 @@ body {
 .contact-form h2 {
     color: orange;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .contact-form form table {

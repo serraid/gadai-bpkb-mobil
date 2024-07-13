@@ -39,10 +39,12 @@ body {
 .navbar-left {
     display: flex;
     align-items: center;
+    margin-left: 0rem;
 }
 
 .navbar-logo .logo-img {
     max-height: 40px;
+    margin-left: 0rem;
 }
 
 .navbar-right {

@@ -16,10 +16,22 @@ document.addEventListener('click', function (e) {
 });
 
 let prevScrollPos = window.pageYOffset;
+let isScrolling = false;
+
 window.addEventListener('scroll', function () {
-    var navbar = document.querySelector('.navbar');
-    var contact = document.querySelector('.contact');
-    var currentScrollPos = window.pageYOffset;
+    if (!isScrolling) {
+        window.requestAnimationFrame(function () {
+            handleScroll();
+            isScrolling = false;
+        });
+        isScrolling = true;
+    }
+});
+
+function handleScroll() {
+    const navbar = document.querySelector('.navbar');
+    const contact = document.querySelector('.contact');
+    const currentScrollPos = window.pageYOffset;
 
     if (contact.getBoundingClientRect().top < window.innerHeight) {
         if (prevScrollPos > currentScrollPos) {
@@ -32,7 +44,7 @@ window.addEventListener('scroll', function () {
     }
 
     prevScrollPos = currentScrollPos;
-});
+}
 
 const texts = ["Modal Usaha?", "Renovasi Rumah?", "Pendidikan?"];
 let index = 0;
@@ -46,28 +58,19 @@ const changeText = () => {
 setInterval(changeText, 3000);
 
 function toggleInfo(id) {
-    var element = document.getElementById(id);
-    if (element.style.display === "block") {
-        element.style.display = "none";
-    } else {
-        element.style.display = "block";
-    }
+    const element = document.getElementById(id);
+    element.style.display = (element.style.display === "block") ? "none" : "block";
 }
 
 // Get the button
-let mybutton = document.getElementById("scrollBtn");
+const mybutton = document.getElementById("scrollBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
     scrollFunction();
 };
 
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-    } else {
-        mybutton.style.display = "none";
-    }
+    mybutton.style.display = (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) ? "block" : "none";
 }
 
 // When the user clicks on the button, scroll to the top of the document smoothly

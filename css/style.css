@@ -1,4 +1,3 @@
-/* Global Styles */
 :root {
     --primary-color: #007bff;
     --secondary-color: #6c757d;
@@ -16,7 +15,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Navbar Styles */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -100,7 +98,6 @@ body {
     border: 0;
 }
 
-/* Hero Section Styles */
 .hero {
     position: relative;
     height: 75vh;
@@ -220,7 +217,6 @@ body {
     font-size: 1.2em;
 }
 
-/*Konten halaman section */
 #scrollBtn {
     display: none;
     position: fixed;
@@ -241,7 +237,6 @@ body {
     background-color: rgba(200, 110, 0, 0.5);
 }
 
-/* Contact Section Styles */
 .contact {
     padding: 10px 20px;
     background-color: #ffffff;
@@ -340,7 +335,6 @@ body {
     margin-bottom: 8px;
 }
 
-/* Added styles for button to match input[type="submit"] */
 .contact-form form table tr .submit-btn {
     background-color: #f39c12;
     color: #ffffff;
@@ -365,7 +359,6 @@ body {
     color: #999;
 }
 
-/* Container1 */
 .container1 {
     display: flex;
     max-width: 100%;
@@ -414,7 +407,6 @@ body {
     color: orange
 }
 
-/* About Section Styles */
 .about {
     padding: 10px 0;
     background-color: #f8f9fa;
@@ -470,7 +462,6 @@ body {
     width: 100%;
 }
 
-/* About-1 Section Styles */
 .about-1 {
     padding: 5px 20px;
     background-color: #F1F9FF;
@@ -537,7 +528,6 @@ body {
     margin-right: 8px;
 }
 
-/* Menu Section Styles */
 .menu {
     padding: 20px;
     text-align: center;
@@ -666,7 +656,6 @@ body {
     background-color: #4cae4c;
 }
 
-/* Kredit Section */
 .kredit-container {
     display: flex;
     justify-content: center;
@@ -728,7 +717,6 @@ body {
     height: auto;
 }
 
-/* Testimonial Section */
 .testimonial-section {
     background-color: #f8f9fa;
     padding: 40px 20px;
@@ -805,7 +793,6 @@ body {
     line-height: 1.5;
 }
 
-/* Footer Styles */
 footer {
     background-color: #0056b3;
     color: #ffffff;
@@ -911,7 +898,6 @@ footer .credit a {
     background-color: #20b358;
 }
 
-/* Styles for the floating WhatsApp button */
 .floating-whatsapp {
     position: fixed;
     bottom: 20px;
@@ -937,7 +923,6 @@ footer .credit a {
 .floating-whatsapp i {
     font-size: 24px;
     text-decoration: none;
-    /* Ensure no underline on the icon */
 }
 
 /* Media Queries */
@@ -1149,14 +1134,12 @@ footer .credit a {
         margin-bottom: 10px;
         position: relative;
         height: 450px;
-        /* Sesuaikan tinggi sesuai kebutuhan */
         overflow: hidden;
     }
 
     .hero-image {
         position: absolute;
         top: -150px;
-        /* Naikkan gambar lebih ke atas */
         left: 0;
         right: 0;
         width: 100%;
@@ -1169,7 +1152,6 @@ footer .credit a {
         margin: 0 auto;
         order: 2;
         margin-top: -30px;
-        /* Naikkan teks lebih banyak */
     }
 
     .text-overlay h1 {
@@ -1220,14 +1202,11 @@ footer .credit a {
 
     .contact-form h2 {
         font-weight: 600;
-        /* Menambah ketebalan h2 */
         margin-top: 10px;
-        /* Sesuaikan margin atas sesuai kebutuhan */
     }
 
     .contact-form label {
         font-weight: 400;
-        /* Mempertebal label namun tidak terlalu tebal */
         display: inline-block;
         width: 150px;
         white-space: nowrap;
@@ -1235,14 +1214,12 @@ footer .credit a {
 
     .contact-form td {
         padding: 2px;
-        /* Sesuaikan jarak antara label dan input */
     }
 
     .contact-form input,
     .contact-form textarea,
     .contact-form select {
         width: calc(100% - 160px);
-        /* Sesuaikan lebar input sesuai kebutuhan */
     }
 
     .contact-form td label,
@@ -1268,11 +1245,8 @@ footer .credit a {
 
     .about-content h2 {
         font-weight: 200;
-        /* Kurangi ketebalan teks */
         font-size: 20px;
-        /* Sesuaikan ukuran font */
         margin: 0 20px;
-        /* Jarak kiri dan kanan */
     }
 
     .about-content p {
@@ -1711,7 +1685,6 @@ footer .credit a {
         }
     }
 
-    /* Hero Section Styles for iPhone */
     @media only screen and (max-width: 414px) {
         .navbar {
             padding: 1.2rem 7% 0.1rem;

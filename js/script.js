@@ -1,12 +1,10 @@
-// Toggle class active
 const navbarNav = document.querySelector('.navbar-nav');
-// ketika hamburger menu di klik
+
 document.querySelector('#hamburger-menu').onclick = (e) => {
     navbarNav.classList.toggle('active');
     e.preventDefault();
 };
 
-// klik di luar sidebar untuk menghilangkan nav
 const hamburger = document.querySelector('#hamburger-menu');
 
 document.addEventListener('click', function (e) {
@@ -62,7 +60,6 @@ function toggleInfo(id) {
     element.style.display = (element.style.display === "block") ? "none" : "block";
 }
 
-// Get the button
 const mybutton = document.getElementById("scrollBtn");
 
 window.onscroll = function () {
@@ -73,7 +70,6 @@ function scrollFunction() {
     mybutton.style.display = (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) ? "block" : "none";
 }
 
-// When the user clicks on the button, scroll to the top of the document smoothly
 function topFunction() {
     window.scrollTo({
         top: 0,
@@ -89,21 +85,19 @@ function submitForm() {
 
     fetch(scriptURL, { method: 'POST', body: data })
         .then(response => {
-            form.reset(); // Reset the form after successful submission
+            form.reset();
         })
         .catch(error => console.error('Error!', error.message));
 }
 
-// JavaScript to ensure only numbers are entered in the phone number field
 document.getElementById('nomor').addEventListener('input', function (e) {
     this.value = this.value.replace(/[^0-9]/g, '');
 });
 
-// Adjust margin-bottom of hero section
 window.addEventListener('DOMContentLoaded', (event) => {
     const heroSection = document.querySelector('.hero');
     if (heroSection) {
-        heroSection.style.marginBottom = '20px'; // Adjust the value as needed
+        heroSection.style.marginBottom = '20px';
     }
 });
 

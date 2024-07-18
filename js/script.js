@@ -79,16 +79,36 @@ function topFunction() {
 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbymk0njHaIJgPL4gZHPpWoQ288ns6FNJSqn3uc-5GR2SSY9WbH0Fkf7vhCGy_o72pjf/exec';
 
-function submitForm() {
+function submitForm(event) {
+    event.preventDefault(); // Prevent default form submission
     const form = document.forms['loanForm'];
-    const data = new FormData(form);
+    const captchaError = document.getElementById('captchaError');
+    
+    grecaptcha.ready(function() {
+        grecaptcha.execute('YOUR_SITE_KEY6LdbxRIqAAAAAAKB9F5BcZNm-q1VakVaa9lPFz4Y', {action: 'submit'}).then(function(token) {
+            if (token.length === 0) {
+                captchaError.textContent = 'Captcha belum diverifikasi. Silakan coba lagi.';
+                return;
+            } else {
+                captchaError.textContent = '';
+            }
 
-    fetch(scriptURL, { method: 'POST', body: data })
-        .then(response => {
-            form.reset();
-        })
-        .catch(error => console.error('Error!', error.message));
+            const data = new FormData(form);
+            data.append('g-recaptcha-response', token); // Append captcha response to form data
+
+            fetch('/php/process-form.php', { method: 'POST', body: data })
+                .then(response => response.text()) // Assuming response is plain text
+                .then(result => {
+                    form.reset();
+                    grecaptcha.reset(); // Reset reCAPTCHA
+                    console.log('Success!', result); // Handle success response
+                })
+                .catch(error => console.error('Error!', error.message));
+        });
+    });
 }
+
+document.getElementById('loanForm').addEventListener('submit', submitForm);
 
 document.getElementById('nomor').addEventListener('input', function (e) {
     this.value = this.value.replace(/[^0-9]/g, '');

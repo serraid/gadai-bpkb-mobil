@@ -5,6 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta tags yang Anda tambahkan di sini -->
+    <meta name="description" content="Serra.id menyediakan pinjaman jaminan BPKB mobil & motor dengan proses cepat dan tenor hingga 48 bulan.">
+    <meta name="keywords" content="gadai bpkb mobil, gadai bpkb motor, pinjaman jaminan bpkb, pinjaman cepat, pinjaman tunai">
+    <meta name="author" content="PT Rams Genta Sinergi">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Gadai BPKB Mobil">
+    <meta property="og:description" content="Serra.id menyediakan pinjaman jaminan BPKB mobil & motor dengan proses cepat dan tenor hingga 48 bulan.">
+    <meta property="og:image" content="img/serraidcom-min.png">
+    <meta property="og:url" content="https://www.serra.id">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="id_ID">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Gadai BPKB Mobil">
+    <meta name="twitter:description" content="Serra.id menyediakan pinjaman jaminan BPKB mobil & motor dengan proses cepat dan tenor hingga 48 bulan.">
+    <meta name="twitter:image" content="img/serraidcom-min.png">
+    <!-- End of Meta tags -->
     <title>Gadai BPKB Mobil</title>
 
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -17,6 +33,7 @@
     <script src="https://unpkg.com/feather-icons"></script>
 
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -80,7 +97,7 @@
             <div class="contact-form" id="contact-form">
                 <h2>Isi Form Untuk Simulasi Terbaik</h2>
 
-                <form id="loanForm">
+                <form id="loanForm" action="/php/process-form.php" method="post">
                     <table>
                         <tr>
                             <td><label for="nama">Nama</label></td>
@@ -148,7 +165,13 @@
                         </tr>
                         <tr>
                             <td colspan="2" style="text-align: center;">
-                                <button type="button" onclick="submitForm()" class="submit-btn">Kirim</button>
+                                <div class="g-recaptcha" data-sitekey="6LdbxRIqAAAAAAKB9F5BcZNm-q1VakVaa9lPFz4Y"></div>
+                                <p id="captchaError" style="color: red;"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: center;">
+                                <button type="submit" class="submit-btn">Kirim</button>
                             </td>
                         </tr>
                         <tr>
